@@ -38,7 +38,7 @@ async def on_voice_state_update(member : discord.Member, firstVoiceState, newVoi
     if newVoiceState.channel.id == asmrChannelid:
         await client.get_channel(announceChannelid).send(f'<@{member.id}> GET OUT OF THAT ASMR CHANNEL THIS VERY SECOND')
         await DMcountdown(10, member)
-        time.sleep(10)
+        asyncio.sleep(10)
         if member.voice.channel.id == asmrChannelid:
             await member.kick()
 
