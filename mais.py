@@ -10,8 +10,8 @@ import asyncio
 client = discord.Client()
 prefix = "m!"
 
-announceChannelid = (629686119943897089)
-asmrChannelid = (629686119943897095)
+announceChannelid = (IDHERE)
+asmrChannelid = (IDHERE)
 
 def readcmd(message):
     if str(message.content.startswith(prefix)):
@@ -53,4 +53,4 @@ async def on_message(message):
     if command  == ("ping"):
         await message.channel.send("pong")
 
-client.run('NzQ5MjE5MDA3MDA0OTM0MTg0.X0oykw.aiSVDSfMn_BEQyTFuc3q-JuGjvs')
+client.run('TOKEN')
